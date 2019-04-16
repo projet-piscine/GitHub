@@ -1,0 +1,145 @@
+# depslib dependency file v1.0
+1555333899 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\coords.cpp
+	"coords.h"
+	<iostream>
+
+1555333903 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\coords.h
+	"svgfile.h"
+	"util.h"
+	"couleur.h"
+	<vector>
+	<iostream>
+	<string>
+	<algorithm>
+
+1555334066 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\svgfile.h
+	<string>
+	<fstream>
+	<set>
+
+1555334434 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\util.h
+	<string>
+
+1555334435 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\couleur.h
+	<string>
+	<cstdint>
+
+1555356093 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\couleur.cpp
+	"couleur.h"
+	"svgfile.h"
+	"util.h"
+	<iostream>
+
+1555412351 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\main.cpp
+	<iostream>
+	"graphe.h"
+	"svgfile.h"
+	<cstdlib>
+	<fstream>
+
+1555334065 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\svgfile.cpp
+	"svgfile.h"
+	<iostream>
+	<sstream>
+
+1555408542 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\sommet.cpp
+	"Sommet.h"
+
+1555408543 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\sommet.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"svgfile.h"
+	"Couleur.h"
+
+1555415755 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\graphe.cpp
+	"Graphe.h"
+
+1555410397 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\graphe.h
+	"Arete.h"
+	"Sommet.h"
+
+1555356026 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\arête.h
+	<string>
+	"svgfile.h"
+	"Sommet.h"
+
+1555356059 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\arête.cpp
+	"arête.h"
+
+1555363781 c:\users\bapti\desktop\ing2\projet piscine\projet piscine\arete.h
+	<string>
+	"Sommet.h"
+
+1555415833 source:c:\users\bapti\desktop\ing2\projet piscine\projet piscine\arete.cpp
+	"arete.h"
+
+1555356094 source:c:\users\matla\desktop\projet piscine\couleur.cpp
+	"couleur.h"
+	"svgfile.h"
+	"util.h"
+	<iostream>
+
+1555334436 c:\users\matla\desktop\projet piscine\couleur.h
+	<string>
+	<cstdint>
+
+1555334068 c:\users\matla\desktop\projet piscine\svgfile.h
+	<string>
+	<fstream>
+	<set>
+
+1555334436 c:\users\matla\desktop\projet piscine\util.h
+	<string>
+
+1555412352 source:c:\users\matla\desktop\projet piscine\main.cpp
+	<iostream>
+	"graphe.h"
+	"svgfile.h"
+	<cstdlib>
+	<fstream>
+
+1555410398 c:\users\matla\desktop\projet piscine\graphe.h
+	"Arete.h"
+	"Sommet.h"
+
+1555363782 c:\users\matla\desktop\projet piscine\arete.h
+	<string>
+	"Sommet.h"
+
+1555408544 c:\users\matla\desktop\projet piscine\sommet.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	"svgfile.h"
+	"Couleur.h"
+
+1555408544 source:c:\users\matla\desktop\projet piscine\sommet.cpp
+	"Sommet.h"
+
+1555334066 source:c:\users\matla\desktop\projet piscine\svgfile.cpp
+	"svgfile.h"
+	<iostream>
+	<sstream>
+
+1555334436 source:c:\users\matla\desktop\projet piscine\util.cpp
+	"util.h"
+	<random>
+	<ctime>
+	<iostream>
+	<streambuf>
+	<vector>
+	<cstdlib>
+	<cstdio>
+	<algorithm>
+	<cstring>
+	<iostream>
+	<thread>
+	"util.h"
+	<windows.h>
+
+1555415990 source:c:\users\matla\desktop\projet piscine\graphe.cpp
+	"Graphe.h"
+
