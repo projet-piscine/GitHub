@@ -19,6 +19,7 @@ void Graphe::charger()
 
 
     std::ifstream monFlux("manhattan.txt");
+
     if(monFlux)
     {
         monFlux >> nb_Sommet;
@@ -46,11 +47,12 @@ void Graphe::charger()
         for(int i=0; i<nb_Arete; i++)
 
         {
+            std::ifstream monFlux1("manhattan_weights_0.txt");
             std::ifstream monFlux("manhattan.txt");
 
             for(int i=0; i< cpt; ++i)
             {
-                monFlux >> tampon; ///revenir à l'endroit ou on avait quitté le ficher
+                monFlux >> tampon; ///revenir Ã  l'endroit ou on avait quittÃ© le ficher
             }
 
 
@@ -71,18 +73,19 @@ void Graphe::charger()
 
 
 
-            std::ifstream monFlux1("manhattan_weights_0.txt");
+
             if(monFlux1)
             {
+                std::ifstream monFlux1("manhattan_weights_0.txt");
                 monFlux1 >> nb_Arete;
                 monFlux1 >> nb_cout;
 
 
-            for(int i=0; i< cpt; ++i)
+            for(int i=0; i< cpt1; ++i)
             {
                 monFlux1 >> tampon;
             }
-                    monFlux1 >> indiceA;
+                    monFlux1 >> tampon;
                     ++cpt1;
                     monFlux1 >> cout1;
                     ++cpt1;
@@ -105,15 +108,22 @@ else
 
 }
 
-/*void Graphe::Kruskal(Cout)
+void Graphe::Kruskal()
+{
+
 
 /// tri de m_aretes par cout croissant
 
-for(auto i=0; i<sizeof m_sommets-1;i++)
+std::vector<Arete*> copie_m_arete = m_aretes;
+std::vector<Arete*> m_arete_trie;
+
+
+for(size_t i=0; i<sizeof m_sommets-1;i++)
 {
  //   m_arete[i].getID
 }
-*/
+
+}
 void Graphe::dessiner(Svgfile& a)
 {
     for(size_t i=0; i < m_aretes.size(); ++i)
