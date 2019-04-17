@@ -1,22 +1,30 @@
-#include "arete.h"
+#include "Sommet.h"
 
-Arete::Arete(std::string id, Sommet A, Sommet B, float coutA, float coutB)
-        :m_id{id}, m_A{A}, m_B{B}, m_coutA{coutA} , m_coutB{coutB}
+Sommet::Sommet(std::string id,double x,double y)
+        :m_id{id},m_x{x},m_y{y}
+{}
 
-{
-testK = m_id;
-}
+Sommet::Sommet()
+{}
 
-std::string Arete::getId()
+std::string Sommet::getId()
 {
 return m_id;
 }
 
-void Arete::dessiner(Svgfile& a)
+double Sommet::getX()
 {
-    a.addLine(m_A.getX(), m_A.getY(), m_B.getX(), m_B.getY(), Couleur(0,0,0));
-    a.addText((m_A.getX()+ m_B.getX())/2,((m_A.getY()+ m_B.getY())/2)-5,m_id,Couleur(0,0,0)); //indice arete
-    a.addText(((m_A.getX()+ m_B.getX())/2)-20,((m_A.getY()+ m_B.getY())/2)+20,m_coutA,Couleur(0,0,0)); //coutA
-    a.addText(((m_A.getX()+ m_B.getX())/2)+20,((m_A.getY()+ m_B.getY())/2)+20,m_coutB,Couleur(0,0,0)); //coutB
+return m_x;
+}
 
+double Sommet::getY()
+{
+return m_y;
+}
+
+void Sommet::dessiner(Svgfile& a)
+{
+    a.addDisk(m_x, m_y, 20, Couleur(255,255,255));
+    a.addCircle(m_x, m_y, 20,1, Couleur(0,0,0));
+    a.addText(m_x-4.5,m_y+5,m_id,Couleur(0,0,0));
 }
