@@ -7,22 +7,33 @@ class Arete
 {
 public:
 
-Arete(std::string id, Sommet A, Sommet B, float coutA, float coutB);
+    Arete(int id, Sommet A, Sommet B, float cout1, float cout2, bool affiche);
 
-void dessiner(Svgfile& a);
+    Arete();
 
-std::string getId();
+    void dessiner(Svgfile& a);
+    void dessinerKruskal(Svgfile& a);
+    void afficherData();
+
+    int getId();
+    Sommet getA();
+    Sommet getB();
+    float getCout1();
+    float getCout2();
+    bool getAffiche();
+
+    void setAffiche(bool affiche);
+
 
 private:
 
 
-std::string m_id;
-std::string testK;
-Sommet m_A;
-Sommet m_B;
-float m_coutA;
-float m_coutB;
-Couleur m_C;
+    int m_id;
+    Sommet m_A;
+    Sommet m_B;
+    float m_cout1;
+    float m_cout2;
+    bool m_affiche;
 };
 
 #endif // ARETE_H_INCLUDED

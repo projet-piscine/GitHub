@@ -11,19 +11,23 @@
 class Sommet
 {
     public:
-Sommet(std::string id,double x,double y);
+Sommet(int id,double x,double y);
 void dessiner(Svgfile& a);
+void afficher();
 
 Sommet();
 
-std::string getId();
+int getId();
 double getX();
 double getY();
+void setId(int id);
+
 
     private:
 
-std::string m_id; // Identifiant
+int m_id; // Identifiant
 double m_x, m_y; // Position
+
 
 
 

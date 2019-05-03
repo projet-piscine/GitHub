@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Coords.cpp" />
-		<Unit filename="Coords.h" />
+		<Unit filename="Arete.cpp" />
+		<Unit filename="Arete.h" />
+		<Unit filename="Graphe.cpp" />
+		<Unit filename="Graphe.h" />
 		<Unit filename="Sommet.cpp" />
 		<Unit filename="Sommet.h" />
 		<Unit filename="couleur.cpp" />
@@ -41,8 +43,6 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="svgfile.cpp" />
 		<Unit filename="svgfile.h" />
-		<Unit filename="util.cpp" />
-		<Unit filename="util.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
